@@ -1,0 +1,12 @@
+{
+  "validation_error": "Please check your inputs.",
+  "missing_video": "Video file required.",
+  "bad_mime": "Unsupported media type.",
+  "bad_voice": "Voice not supported.",
+  "bad_range": "Trim end must be after start.",
+  "payload_too_large": "Upload exceeds server limit.",
+  "too_many_files": "Too many videos in one batch.",
+  "script_generation_failed": "AI couldn't generate a script for this clip — try again.",
+  "local_vision_disabled": "Local vision script generation is disabled in this environment. Use the external AI prompt on the Transcript tab.",
+  "internal_server_error": "Something went wrong on the server."
+}

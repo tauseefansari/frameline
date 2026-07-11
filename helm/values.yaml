@@ -1,0 +1,58 @@
+# Override image at deploy time:
+#   helm upgrade --install frameline ./helm --set app.image=<registry>/frameline:<tag>
+
+imagePullSecret: ""
+imagePullPolicy: IfNotPresent
+
+namespace: frameline
+
+secret:
+  # Created by CI from GitHub secrets (see .github/workflows/deploy-eks.yml).
+  name: frameline-env
+
+app:
+  name: frameline
+  containerName: frameline
+  image: ""
+  replicas: 2
+  port: 3000
+  targetPort: 3000
+  resources:
+    requests:
+      cpu: 500m
+      memory: 1Gi
+    limits:
+      cpu: "2"
+      memory: 3Gi
+
+# Set true only when the cluster has the Argo Rollouts CRD installed.
+rollout:
+  enabled: false
+  strategy:
+    canary:
+      maxSurge: "25%"
+      maxUnavailable: 0
+      steps:
+        - setWeight: 50
+        - pause:
+            duration: 5m
+        - setWeight: 100
+
+ingress:
+  enabled: true
+  appName: frameline-ingress
+  class: nginx-internal
+  host: ""
+  servicePath: /
+  tls:
+    enabled: true
+    secretName: frameline-tls
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    ingress.kubernetes.io/ssl-redirect: "true"
+    kubernetes.io/tls-acme: "true"
+    nginx.ingress.kubernetes.io/proxy-body-size: 220m
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "600"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "600"
+    nginx.ingress.kubernetes.io/client-body-buffer-size: 1m
+    nginx.ingress.kubernetes.io/client-max-body-size: 220m

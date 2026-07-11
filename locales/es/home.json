@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "eyebrow": "Visión × Voz",
+    "titleWord1": "Narra",
+    "titleWord2": "cualquier",
+    "titleWord3": "vídeo.",
+    "subtitle": "Entrega un clip a la IA de visión, recibe un guion escrito con el tono que elijas, escoge entre una docena de voces neuronales y renderiza el vídeo final — recorte, narración y subtítulos incrustados en una sola pasada.",
+    "cta": "Abrir Estudio",
+    "secondary": "Desplázate para explorar"
+  },
+  "preview": {
+    "eyebrow": "Pipeline",
+    "status": "En vivo",
+    "title": "Stack del Estudio",
+    "body": "Guion impulsado por visión, doce voces Piper, recorte y fusión cuadro a cuadro, y renderizado en un clic con subtítulos opcionales — potencia del servidor, UI cristalina.",
+    "hint": "LLM de visión local · 12 voces Piper · 8 tonos de guion · Renderizado FFmpeg"
+  },
+  "features": {
+    "title": "Una consola, no una caja de herramientas",
+    "body": "Cada paso vive en el mismo lienzo. Suelta, genera, escucha, recorta, fusiona, renderiza — sin saltar entre herramientas ni perder tus decisiones de edición.",
+    "chip1": "Guion AI a partir de fotogramas",
+    "chip2": "12 voces neuronales",
+    "chip3": "Renderizado FFmpeg en una pasada"
+  },
+  "workflow": {
+    "eyebrow": "Ruta de la señal",
+    "title": "Cuatro pasos. Una línea de tiempo.",
+    "subtitle": "Cada paso está aislado, inspeccionable y pensado para iterar.",
+    "step1Title": "Suelta un clip",
+    "step1Body": "Sube MP4, MOV o WebM de hasta 200 MB — clips sueltos o una biblioteca de hasta ocho que puedes reordenar y fusionar. Los archivos se procesan en el servidor y se eliminan tras exportar.",
+    "step2Title": "Genera el guion",
+    "step2Body": "Un modelo de visión MiniCPM-V local observa fotogramas clave y escribe una narración con el tono que elijas — cinematográfico, documental, demo y más. Pega un README o notas de producto (hasta 4 000 caracteres) para dar más contexto y edita cada línea al instante.",
+    "step3Title": "Elige una voz",
+    "step3Body": "Escoge entre doce voces neuronales Piper con acentos estadounidenses y británicos — previsualiza cada una con una frase de muestra, regenera libremente y sincroniza las marcas de tiempo con tu línea de tiempo.",
+    "step4Title": "Renderiza",
+    "step4Body": "Una sola pasada de FFmpeg mezcla la narración, los subtítulos opcionales y tus puntos de recorte en el MP4 final — sin idas y venidas encadenadas."
+  },
+  "stats": {
+    "title": "Pensado para flujos de producción",
+    "s1": "1 pasada",
+    "l1": "El renderizado fusiona voz, subtítulos y recorte",
+    "s2": "Servidor primero",
+    "l2": "Las tareas pesadas fuera del cliente",
+    "s3": "Local",
+    "l3": "El guionado por visión y el TTS se ejecutan íntegramente en tu equipo"
+  },
+  "specs": {
+    "title": "Lo que hay dentro",
+    "body": "Un stack enfocado a contenido corto narrado: guionado por visión, narración neuronal, subtítulos, recorte y fusión — todo conectado a un único endpoint de renderizado.",
+    "c1t": "Guiones escritos por visión",
+    "c1b": "Un LLM de visión local muestrea fotogramas clave del clip y redacta un guion en uno de ocho tonos — cinematográfico, documental, demo, enérgico, calmado, educativo, promocional o tu propio prompt personalizado. Aliméntalo con un README o notas del producto para dar más contexto y edita cada línea antes de doblarla.",
+    "c2t": "Doce voces neuronales",
+    "c2b": "Una docena de voces Piper con acentos estadounidenses y británicos — Amy, Ryan, Alan, Jenny, Lessac, Kathleen, Joe, John, Norman, LJ, Alba y Cori. Previsualiza cada una con una frase de muestra y luego graba la elegida en el renderizado final. Toda la síntesis se ejecuta sin conexión.",
+    "c3t": "Subtítulos incrustados",
+    "c3b": "Sincroniza las marcas de tiempo con el vídeo cargado en un clic, o edita los tiempos de entrada y salida de cada segmento directamente en la pestaña Transcripción — los vecinos se reajustan en cascada para que la pista de subtítulos quede continua.",
+    "c4t": "Recortar y fusionar",
+    "c4b": "Define la entrada y salida en la línea de tiempo con controladores cuadro a cuadro, mueve o desplaza el cabezal, reemplaza el clip activo con una selección, o une hasta ocho clips con controladores de recorte por clip — el renderizado emite un único MP4 limpio."
+  },
+  "faq": {
+    "title": "Señales y ruido",
+    "q1": "¿Almacenan mis vídeos?",
+    "a1": "Las subidas viven en un directorio de sesión efímero mientras ffmpeg trabaja y luego se eliminan — nada se conserva para entrenamiento.",
+    "q2": "¿Qué modelos impulsan el stack?",
+    "a2": "Todo es local: MiniCPM-V 2.6 (un LLM de visión alojado en Ollama, diseñado para comprensión de múltiples imágenes y vídeo) redacta el guion y Piper lo dobla. Los subtítulos provienen de los segmentos cronometrados que editas en la pestaña Transcripción — sin la nube, sin modelos extra.",
+    "q3": "¿Puedo usar mi propia voz?",
+    "a3": "Aún no — el Estudio incluye doce voces Piper seleccionadas con acentos estadounidenses y británicos. La clonación de voz personalizada no está integrada.",
+    "q4": "¿Esto reemplaza a mi NLE?",
+    "a4": "Es una consola complementaria para contenido corto narrado: guionado, doblaje, subtítulos, recorte y fusión. Lleva el MP4 renderizado a tu NLE para los retoques finales."
+  },
+  "closing": {
+    "title": "Listo cuando aterrice tu metraje.",
+    "body": "Abre el Estudio, suelta un clip y deja que la visión escriba tu próxima narración.",
+    "cta": "Lanzar Estudio",
+    "secondary": "Volver arriba"
+  }
+}

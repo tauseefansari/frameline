@@ -1,0 +1,6 @@
+apiVersion: v2
+name: frameline
+description: Frameline — Next.js studio with Piper TTS and ffmpeg render pipeline
+type: application
+version: 1.0.0
+appVersion: "0.1.0"

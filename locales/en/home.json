@@ -1,0 +1,76 @@
+{
+  "hero": {
+    "eyebrow": "Vision × Voice",
+    "titleWord1": "Narrate",
+    "titleWord2": "any",
+    "titleWord3": "video.",
+    "subtitle": "Hand a clip to AI vision, get a written script in the tone you pick, choose from a dozen neural voices, and render the final video — trim, voiceover and burned-in captions in a single pass.",
+    "cta": "Open Studio",
+    "secondary": "Scroll to explore"
+  },
+  "preview": {
+    "eyebrow": "Pipeline",
+    "status": "Live",
+    "title": "Studio stack",
+    "body": "Vision-driven script, twelve Piper voices, frame-precise trim and merge, and one-click render with optional captions — server-side power, glass-clear UI.",
+    "hint": "Local vision LLM · 12 Piper voices · 8 script tones · FFmpeg render"
+  },
+  "features": {
+    "title": "A console, not a toolbox",
+    "body": "Every step lives on one canvas. Drop, generate, listen, trim, merge, render — without bouncing between tools or losing your edit decisions.",
+    "chip1": "AI script from frames",
+    "chip2": "12 neural voices",
+    "chip3": "One-pass FFmpeg render"
+  },
+  "workflow": {
+    "eyebrow": "Signal path",
+    "title": "Four beats. One timeline.",
+    "subtitle": "Each step is isolated, inspectable, and built for iteration.",
+    "step1Title": "Drop a clip",
+    "step1Body": "Upload MP4, MOV, or WebM up to 200 MB — single clips or a library of up to eight you can reorder and merge. Files are processed on the server and cleaned up after export.",
+    "step2Title": "Generate script",
+    "step2Body": "A local MiniCPM-V vision model watches keyframes and writes a narration in the tone you pick — cinematic, documentary, demo, and more. Paste a README or product notes (up to 4 000 characters) for extra context, then edit every line inline.",
+    "step3Title": "Pick a voice",
+    "step3Body": "Choose from twelve Piper neural voices spanning US and UK accents — preview each on a sample line, regenerate freely, and sync timestamps to your timeline.",
+    "step4Title": "Render",
+    "step4Body": "One FFmpeg pass mixes voiceover, optional burned-in captions, and your trim points into the final MP4 — no chained round trips."
+  },
+  "stats": {
+    "title": "Built for production floors",
+    "s1": "1-pass",
+    "l1": "Render mixes voice, captions, and trim",
+    "s2": "Server-first",
+    "l2": "Heavy lifting off the client",
+    "s3": "Local",
+    "l3": "Vision scripting and TTS run entirely on your machine"
+  },
+  "specs": {
+    "title": "What's inside",
+    "body": "A focused stack for narrated short-form: vision scripting, neural voiceover, captions, trim and merge — all wired to one render endpoint.",
+    "c1t": "Vision-written scripts",
+    "c1b": "A local vision LLM samples keyframes from your clip and drafts a script in one of eight tones — cinematic, documentary, demo, energetic, calm, educational, promotional, or your own custom prompt. Feed it a README or product notes for extra context, then edit every line before voicing.",
+    "c2t": "Twelve neural voices",
+    "c2b": "A dozen Piper voices across US and UK accents — Amy, Ryan, Alan, Jenny, Lessac, Kathleen, Joe, John, Norman, LJ, Alba and Cori. Preview each on a sample line, then bake the winner into the final render. All synthesis runs offline.",
+    "c3t": "Burned-in captions",
+    "c3b": "Sync timestamps to the loaded video with one click, or edit segment in/out times directly in the Transcript tab — neighbours cascade so the whole caption track stays contiguous.",
+    "c4t": "Trim & merge",
+    "c4b": "Set in/out on the timeline with frame-precise handles, scrub or step the playhead, replace the active clip with a selection, or stitch up to eight clips together with per-clip trim handles — render emits one clean MP4."
+  },
+  "faq": {
+    "title": "Signals & noise",
+    "q1": "Do you store my videos?",
+    "a1": "Uploads live in an ephemeral session directory while ffmpeg runs, then get cleaned up — nothing is retained for training.",
+    "q2": "Which models power the stack?",
+    "a2": "Entirely local: MiniCPM-V 2.6 (an Ollama-hosted vision LLM built for multi-image and video understanding) drafts the script, and Piper voices it. Captions come from the timed segments you edit in the Transcript tab — no cloud, no extra model.",
+    "q3": "Can I use my own voice?",
+    "a3": "Not yet — Studio ships twelve curated Piper voices across US and UK accents. Custom voice cloning isn't bundled.",
+    "q4": "Does this replace my NLE?",
+    "a4": "It's a companion console for narrated short-form: scripting, voicing, captions, trim, and merge. Take the rendered MP4 into your NLE for final polish."
+  },
+  "closing": {
+    "title": "Ready when your footage lands.",
+    "body": "Open Studio, drop a clip, and let vision write your next voiceover.",
+    "cta": "Launch Studio",
+    "secondary": "Back to top"
+  }
+}

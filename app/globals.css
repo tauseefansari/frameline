@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/*
+ * Do not set body background here — it overrides MUI CssBaseline's background-color
+ * (the `background` shorthand resets the whole background stack to transparent).
+ */
+:root {
+  --foreground: inherit;
+}
+
+body {
+  margin: 0;
+}

@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Frameline",
+    "description": "Frameline convierte cualquier vídeo en un montaje narrado — un modelo de visión local escribe el guion, Piper le pone voz y un solo renderizado genera el MP4 final con subtítulos opcionales incrustados."
+  },
+  "nav": {
+    "brand": "Frameline",
+    "studio": "Estudio",
+    "home": "Inicio",
+    "features": "Funciones",
+    "workflow": "Flujo",
+    "faq": "Preguntas"
+  },
+  "theme": {
+    "toggleDark": "Cambiar a modo oscuro",
+    "toggleLight": "Cambiar a modo claro"
+  },
+  "language": {
+    "label": "Idioma",
+    "en": "Inglés",
+    "es": "Español"
+  },
+  "a11y": {
+    "notifications": "Notificaciones"
+  }
+}

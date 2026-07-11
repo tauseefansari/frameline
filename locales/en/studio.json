@@ -1,0 +1,299 @@
+{
+  "preview": {
+    "overline": "Preview"
+  },
+  "files": {
+    "cutVideo": "trimmed-clip.mp4",
+    "voiceAudio": "voiceover.mp3",
+    "exportVideo": "final-video.mp4",
+    "transcript": "script.txt"
+  },
+  "voices": {
+    "amy": { "label": "Amy", "hint": "Warm female · US" },
+    "ryan": { "label": "Ryan", "hint": "Clear male · US" },
+    "alan": { "label": "Alan", "hint": "British male" },
+    "jenny": { "label": "Jenny", "hint": "British female" },
+    "lessac": { "label": "Lessac", "hint": "Neutral · balanced" },
+    "kathleen": { "label": "Kathleen", "hint": "Soft female · US" },
+    "joe": { "label": "Joe", "hint": "Confident male · US" },
+    "john": { "label": "John", "hint": "Deep male · US" },
+    "norman": { "label": "Norman", "hint": "Smooth male · US" },
+    "ljspeech": { "label": "LJ", "hint": "High-quality female · US" },
+    "alba": { "label": "Alba", "hint": "Female · Scottish" },
+    "cori": { "label": "Cori", "hint": "Bright female · GB" }
+  },
+  "tabs": {
+    "source": "Source",
+    "transcript": "Transcript",
+    "voice": "Voice",
+    "timeline": "Timeline",
+    "merge": "Merge",
+    "export": "Export"
+  },
+  "library": {
+    "title": "Clip library",
+    "count": "{count} clips",
+    "fileSize": "{size} MB",
+    "reorderHint": "Use the arrow buttons to reorder",
+    "moveLeft": "Move left",
+    "moveRight": "Move right",
+    "addMore": "Add more videos",
+    "remove": "Remove from library"
+  },
+  "stage": {
+    "empty": "Drop a video to begin",
+    "emptyHint": "MP4 · MOV · WebM up to 200 MB",
+    "drag": "Release to load",
+    "metaSize": "{size} MB",
+    "metaDuration": "{duration}",
+    "metaLabel": "Source",
+    "playLabel": "Play",
+    "pauseLabel": "Pause",
+    "stepBack": "Step back 1s",
+    "stepForward": "Step forward 1s",
+    "muteLabel": "Mute",
+    "unmuteLabel": "Unmute",
+    "volumeLabel": "Volume",
+    "speedLabel": "Playback speed",
+    "speedNormal": "Normal",
+    "fullscreenEnter": "Fullscreen",
+    "fullscreenExit": "Exit fullscreen",
+    "shortcutsLabel": "Shortcuts",
+    "shortcutPlay": "Play / pause",
+    "shortcutStep": "Step backward / forward",
+    "shortcutInOut": "Set in / out",
+    "shortcutMute": "Mute",
+    "shortcutFullscreen": "Fullscreen"
+  },
+  "source": {
+    "title": "Source clip",
+    "uploadHint": "Files are processed server-side and discarded after export.",
+    "remove": "Remove clip",
+    "removeAll": "Clear library",
+    "ready": "Loaded · {duration}",
+    "transcribe": "Generate AI script",
+    "regenerate": "Regenerate AI script",
+    "transcribing": "Watching {duration} of footage…",
+    "transcribeHint": "A local vision model watches representative frames of your video and writes a fresh narration that matches the visuals — it does not transcribe any existing audio.",
+    "externalWorkflowHint": "Copy the external AI prompt below, run it in Gemini or ChatGPT with your video, then paste the narration here and sync timestamps.",
+    "nextStepHint": "Upload a clip from the preview panel to get started, then head to the Transcript tab to generate your narration.",
+    "nextStepHintExternal": "Upload a clip from the preview panel, then open the Transcript tab and use the external AI prompt to write your narration.",
+    "estimateLabel": "Est. duration",
+    "estimateValue": "~{minutes} min",
+    "toneLabel": "Script tone",
+    "customTonePlaceholder": "Describe the tone, style, or narrator persona…",
+    "repoContextLabel": "Additional context (optional)",
+    "repoContextPlaceholder": "Paste a README, project description, key features, or any notes that will help the AI write a more accurate narration…",
+    "repoContextHint": "Included in the copied external AI prompt (and in local generation when enabled) — add product names, terminology, or README notes for more accurate narration.",
+    "repoContextFilled": "{count} characters added",
+    "tones": {
+      "cinematic": "Cinematic",
+      "documentary": "Documentary",
+      "demo": "App Demo",
+      "energetic": "Energetic",
+      "calm": "Calm",
+      "educational": "Educational",
+      "promotional": "Promotional",
+      "custom": "Custom…"
+    }
+  },
+  "transcript": {
+    "title": "Transcript",
+    "empty": "Run transcription or paste your own script. You can sync timestamps with the loaded video at any time.",
+    "emptyExternal": "Copy the external AI prompt, paste the narration below, then sync timestamps with the loaded video.",
+    "label": "Editable script",
+    "placeholder": "Paste or edit your script — then sync timestamps with the video.",
+    "segmentsTitle": "Segments",
+    "segmentsHint": "Edit the in/out times directly to adjust when each caption appears.",
+    "downloadTxt": "Download .txt",
+    "wordCount": "{count} words",
+    "languageLabel": "Detected language",
+    "noSegments": "No timestamps yet — sync with the loaded video to generate them.",
+    "useInVoice": "Use in voice tab",
+    "sync": "Sync with video",
+    "syncHint": "Re-distribute timestamps across the loaded video so each line lines up with the timeline.",
+    "syncNeedsVideo": "Load a video first to sync timestamps.",
+    "seekToSegment": "Seek player to this segment",
+    "segmentStartLabel": "Start time (MM:SS)",
+    "segmentEndLabel": "End time (MM:SS)",
+    "segmentInLabel": "IN",
+    "segmentOutLabel": "OUT",
+    "segmentDuration": "{dur}s",
+    "deleteSegment": "Delete segment",
+    "collapsible": {
+      "expandHint": "Tap to expand or collapse"
+    },
+    "externalPrompt": {
+      "title": "External AI prompt (Gemini, ChatGPT, …)",
+      "hint": "Copy this prompt into an AI tool that can watch your video. Upload the same clip, paste the prompt, and ask it to narrate only what it sees — ignore any existing audio in the clip.",
+      "steps": {
+        "upload": "Upload the same video to your AI tool",
+        "pastePrompt": "Paste the prompt",
+        "watchVisuals": "Let the AI watch the full clip (visuals only — no audio)",
+        "copyNarration": "Copy the plain-text narration",
+        "pasteScript": "Paste into the script field",
+        "sync": "Click Sync with video"
+      },
+      "stats": "Target ~{words} words (hard max {maxWords}) · {duration} clip · {wpm} wpm natural pace",
+      "needsDuration": "Load a video first so the prompt includes the correct duration and word target.",
+      "copy": "Copy prompt",
+      "copiedTitle": "Copied",
+      "copiedMessage": "External transcript prompt copied to clipboard.",
+      "copyFailedTitle": "Copy failed",
+      "copyFailedMessage": "Could not copy the prompt — select and copy manually."
+    }
+  },
+  "voice": {
+    "title": "Voice",
+    "voiceLabel": "Voice preset",
+    "generate": "Synthesize speech",
+    "generating": "Rendering voice…",
+    "downloadAudio": "Download MP3",
+    "previewNotice": "Speech is packed back-to-back with no gaps. Re-sync after editing the transcript.",
+    "syncedAutoHint": "Segments are timed to your video. Click Synthesize speech when you are ready to generate synced voiceover.",
+    "previewSentence": "Hi! I'm a Frameline voice. Pick me to narrate your next video.",
+    "previewLabel": "Preview voice",
+    "previewPlay": "Play preview",
+    "previewStop": "Stop preview"
+  },
+  "timeline": {
+    "title": "Timeline",
+    "subtitle": "Drag the in/out handles, scrub the playhead, or set bounds from the player.",
+    "inLabel": "In",
+    "outLabel": "Out",
+    "lengthLabel": "Length",
+    "setIn": "Set in at playhead",
+    "setOut": "Set out at playhead",
+    "playRange": "Play selection",
+    "stopRange": "Stop",
+    "reset": "Reset selection",
+    "apply": "Trim clip",
+    "cutting": "Trimming…",
+    "downloadCut": "Download trimmed clip",
+    "clipInPlace": "Replace with selection",
+    "clipping": "Replacing…",
+    "rangeHint": "Selection: {start} → {end}"
+  },
+  "export": {
+    "title": "Render final video",
+    "renderHint": "Pick what to include below, then render. Trim, voiceover and captions all run in one pass on the server.",
+    "includeTitle": "Include",
+    "optionVoiceover": "Replace audio with voiceover",
+    "optionVoiceoverHint": "Use the synthesized voice you generated on the Voice tab.",
+    "optionVoiceoverMissing": "Generate a voice on the Voice tab to enable this.",
+    "optionCaptions": "Burn captions on screen",
+    "optionCaptionsHint": "Burns timed captions from your transcript into the picture.",
+    "optionCaptionsMissing": "Transcribe the video on the Transcript tab to enable this.",
+    "render": "Render final video",
+    "rendering": "Rendering…",
+    "downloadRender": "Download final video"
+  },
+  "player": {
+    "empty": "Load a video to preview",
+    "play": "Play",
+    "pause": "Pause",
+    "stop": "Stop",
+    "loadError": "Unable to load audio.",
+    "initError": "Audio player failed to load."
+  },
+  "errors": {
+    "noVideo": "Load a video first.",
+    "noTranscript": "Add some script text first."
+  },
+  "toasts": {
+    "errorTitle": "Something went wrong",
+    "videoSelected": {
+      "title": "Video loaded",
+      "message": "{name} is ready to edit."
+    },
+    "videoReplaced": {
+      "title": "Active clip changed",
+      "message": "Now editing {name}."
+    },
+    "clipsAdded": {
+      "title": "Added to library",
+      "message": "{count} clip(s) staged for editing."
+    },
+    "clipRemoved": {
+      "title": "Clip removed",
+      "message": "{name} was removed from the library."
+    },
+    "introDetected": {
+      "title": "Intro detected",
+      "message": "Skipped {seconds}s of leading silence so the narration starts when content does."
+    },
+    "transcribe": {
+      "title": "Script ready",
+      "message": "AI wrote a script that fits your video. Review and edit on the Transcript tab."
+    },
+    "synth": {
+      "title": "Voice generated",
+      "message": "Synthesized audio is ready to preview or download."
+    },
+    "cut": {
+      "title": "Clip trimmed",
+      "message": "The selected range has been saved as a new trimmed clip."
+    },
+    "clip": {
+      "title": "Clip replaced",
+      "message": "The active clip was replaced with the selected range — the timeline now reflects the new bounds."
+    },
+    "render": {
+      "title": "Final video ready",
+      "message": "Your final video is ready. Use the Download button to save it."
+    },
+    "sync": {
+      "title": "Timestamps synced",
+      "message": "Each line in the script is now aligned with the video timeline."
+    },
+    "syncTrimmed": {
+      "title": "Script trimmed to fit video",
+      "message": "Your transcript is longer than this clip can carry at natural speech speed. The last sentences were removed — shorten the script or use a longer video."
+    }
+  },
+  "merge": {
+    "title": "Merge clips",
+    "subtitle": "Merge the videos in your library into a single file. Reorder them with the arrow buttons in the clip library shown in the preview panel.",
+    "noLibrary": "Upload videos from the preview panel first — they'll appear here for merging.",
+    "orderNote": "To change the merge order, use the arrow buttons in the clip library in the preview panel.",
+    "resetTrims": "Clear all trims",
+    "include": "Include in merge",
+    "exclude": "Skip from merge",
+    "excludedHint": "Skipped from this merge",
+    "merge": "Merge",
+    "merging": "Merging clips…",
+    "download": "Download merged video",
+    "downloadFilename": "merged.mp4",
+    "mergeInPlace": "Replace merged clips in library",
+    "addedToLibrary": "Replaced in library",
+    "clipCount": "{count} of {max} clips",
+    "totalDuration": "Total · {duration}",
+    "rowLabel": "{index}. {name}",
+    "rowMeta": "Starts at {start} · {duration} · {size} MB",
+    "trimmedHint": "trimmed",
+    "trim": "Trim clip",
+    "errors": {
+      "needTwo": "Add at least two videos to merge.",
+      "maxReached": "You can merge up to {max} clips per batch."
+    },
+    "toast": {
+      "errorTitle": "Merge failed",
+      "mergedTitle": "Clips merged",
+      "mergedMessage": "Your videos were merged in the chosen order.",
+      "replacedInLibrary": {
+        "title": "Library updated",
+        "message": "Merged clip replaced the source videos in your library."
+      }
+    },
+    "trimDialog": {
+      "title": "Trim · {name}",
+      "subtitle": "Source duration: {duration}. Drag the handles to choose what plays in the merged timeline.",
+      "in": "In · {value}",
+      "out": "Out · {value}",
+      "length": "Length · {value}",
+      "reset": "Use full clip",
+      "cancel": "Cancel",
+      "apply": "Apply trim"
+    }
+  }
+}

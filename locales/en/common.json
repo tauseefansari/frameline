@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Frameline",
+    "description": "Frameline turns any video into a narrated cut — a local vision model writes the script, Piper voices it, and one render emits the final MP4 with optional burned-in captions."
+  },
+  "nav": {
+    "brand": "Frameline",
+    "studio": "Studio",
+    "home": "Home",
+    "features": "Features",
+    "workflow": "Workflow",
+    "faq": "FAQ"
+  },
+  "theme": {
+    "toggleDark": "Switch to dark mode",
+    "toggleLight": "Switch to light mode"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "es": "Spanish"
+  },
+  "a11y": {
+    "notifications": "Notifications"
+  }
+}

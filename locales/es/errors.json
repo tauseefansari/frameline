@@ -1,0 +1,12 @@
+{
+  "validation_error": "Revisa los campos introducidos.",
+  "missing_video": "Se requiere un archivo de vídeo.",
+  "bad_mime": "Tipo de archivo no compatible.",
+  "bad_voice": "Voz no compatible.",
+  "bad_range": "El fin del recorte debe ser posterior al inicio.",
+  "payload_too_large": "El archivo supera el límite del servidor.",
+  "too_many_files": "Demasiados vídeos en un mismo lote.",
+  "script_generation_failed": "La IA no pudo generar un guion para este clip — inténtalo de nuevo.",
+  "local_vision_disabled": "La generación local con visión está desactivada en este entorno. Usa el prompt de IA externa en la pestaña Transcripción.",
+  "internal_server_error": "Algo falló en el servidor."
+}

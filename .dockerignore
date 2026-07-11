@@ -1,0 +1,13 @@
+node_modules
+.next
+.git
+.github
+.husky
+models
+*.md
+!README.md
+.env*
+!.env.production
+coverage
+.cursor
+terminals

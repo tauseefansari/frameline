@@ -1,0 +1,81 @@
+{{- if .Values.rollout.enabled }}
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+{{- else }}
+apiVersion: apps/v1
+kind: Deployment
+{{- end }}
+metadata:
+  name: {{ .Values.app.name }}
+  labels:
+    app.kubernetes.io/name: {{ .Values.app.name }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+spec:
+  replicas: {{ .Values.app.replicas }}
+  selector:
+    matchLabels:
+      app: {{ .Values.app.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.app.name }}
+    spec:
+      {{- if .Values.imagePullSecret }}
+      imagePullSecrets:
+        - name: {{ .Values.imagePullSecret | quote }}
+      {{- end }}
+      containers:
+        - name: {{ .Values.app.containerName | quote }}
+          image: {{ required "app.image is required (set via --set app.image=...)" .Values.app.image | quote }}
+          imagePullPolicy: {{ .Values.imagePullPolicy }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.app.targetPort }}
+          env:
+            - name: HOSTNAME
+              value: 0.0.0.0
+            - name: PORT
+              value: {{ .Values.app.port | quote }}
+            - name: FRAMELINE_MODELS_DIR
+              value: /app/models
+            - name: PIPER_BIN
+              value: /app/models/piper/piper
+            - name: PIPER_VOICES_DIR
+              value: /app/models/piper/voices
+            - name: FRAMELINE_ENABLE_LOCAL_VISION
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.secret.name }}
+                  key: FRAMELINE_ENABLE_LOCAL_VISION
+            - name: PIPER_DEFAULT_VOICE
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.secret.name }}
+                  key: PIPER_DEFAULT_VOICE
+          resources:
+            {{- toYaml .Values.app.resources | nindent 12 }}
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+            initialDelaySeconds: 15
+            periodSeconds: 10
+            timeoutSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+            initialDelaySeconds: 30
+            periodSeconds: 20
+            timeoutSeconds: 5
+          volumeMounts:
+            - name: tmp
+              mountPath: /tmp
+      volumes:
+        - name: tmp
+          emptyDir:
+            sizeLimit: 2Gi
+  {{- if .Values.rollout.enabled }}
+  strategy:
+    {{- toYaml .Values.rollout.strategy | nindent 4 }}
+  {{- end }}

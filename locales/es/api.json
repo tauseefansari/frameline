@@ -1,0 +1,8 @@
+{
+  "download": {
+    "voice": "narracion",
+    "cut": "clip-recortado",
+    "concat": "video-fusionado",
+    "render": "video-final"
+  }
+}

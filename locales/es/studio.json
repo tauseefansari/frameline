@@ -1,0 +1,299 @@
+{
+  "preview": {
+    "overline": "Vista previa"
+  },
+  "files": {
+    "cutVideo": "clip-recortado.mp4",
+    "voiceAudio": "narracion.mp3",
+    "exportVideo": "video-final.mp4",
+    "transcript": "guion.txt"
+  },
+  "voices": {
+    "amy": { "label": "Amy", "hint": "Femenina cálida · EE. UU." },
+    "ryan": { "label": "Ryan", "hint": "Masculina clara · EE. UU." },
+    "alan": { "label": "Alan", "hint": "Masculina británica" },
+    "jenny": { "label": "Jenny", "hint": "Femenina británica" },
+    "lessac": { "label": "Lessac", "hint": "Neutra · equilibrada" },
+    "kathleen": { "label": "Kathleen", "hint": "Femenina suave · EE. UU." },
+    "joe": { "label": "Joe", "hint": "Masculina segura · EE. UU." },
+    "john": { "label": "John", "hint": "Masculina grave · EE. UU." },
+    "norman": { "label": "Norman", "hint": "Masculina fluida · EE. UU." },
+    "ljspeech": { "label": "LJ", "hint": "Femenina alta calidad · EE. UU." },
+    "alba": { "label": "Alba", "hint": "Femenina · escocesa" },
+    "cori": { "label": "Cori", "hint": "Femenina luminosa · GB" }
+  },
+  "tabs": {
+    "source": "Fuente",
+    "transcript": "Transcripción",
+    "voice": "Voz",
+    "timeline": "Línea de tiempo",
+    "merge": "Fusionar",
+    "export": "Exportar"
+  },
+  "library": {
+    "title": "Biblioteca de clips",
+    "count": "{count} clips",
+    "fileSize": "{size} MB",
+    "reorderHint": "Usa los botones de flecha para reordenar",
+    "moveLeft": "Mover a la izquierda",
+    "moveRight": "Mover a la derecha",
+    "addMore": "Añadir más vídeos",
+    "remove": "Quitar de la biblioteca"
+  },
+  "stage": {
+    "empty": "Suelta un vídeo para empezar",
+    "emptyHint": "MP4 · MOV · WebM hasta 200 MB",
+    "drag": "Suelta para cargar",
+    "metaSize": "{size} MB",
+    "metaDuration": "{duration}",
+    "metaLabel": "Fuente",
+    "playLabel": "Reproducir",
+    "pauseLabel": "Pausar",
+    "stepBack": "Retroceder 1 s",
+    "stepForward": "Avanzar 1 s",
+    "muteLabel": "Silenciar",
+    "unmuteLabel": "Activar sonido",
+    "volumeLabel": "Volumen",
+    "speedLabel": "Velocidad de reproducción",
+    "speedNormal": "Normal",
+    "fullscreenEnter": "Pantalla completa",
+    "fullscreenExit": "Salir de pantalla completa",
+    "shortcutsLabel": "Atajos",
+    "shortcutPlay": "Reproducir / pausar",
+    "shortcutStep": "Retroceder / avanzar",
+    "shortcutInOut": "Marcar entrada / salida",
+    "shortcutMute": "Silenciar",
+    "shortcutFullscreen": "Pantalla completa"
+  },
+  "source": {
+    "title": "Clip de origen",
+    "uploadHint": "Los archivos se procesan en el servidor y se eliminan tras exportar.",
+    "remove": "Quitar clip",
+    "removeAll": "Vaciar biblioteca",
+    "ready": "Cargado · {duration}",
+    "transcribe": "Generar guion con IA",
+    "regenerate": "Regenerar guion con IA",
+    "transcribing": "Observando {duration} de metraje…",
+    "transcribeHint": "Un modelo de visión local analiza fotogramas representativos del vídeo y escribe una narración nueva que encaja con las imágenes — no transcribe el audio existente.",
+    "externalWorkflowHint": "Copia el prompt de IA externa de abajo, ejecútalo en Gemini o ChatGPT con tu vídeo, pega la narración aquí y sincroniza las marcas de tiempo.",
+    "nextStepHint": "Sube un clip desde el panel de vista previa para empezar y ve a la pestaña Transcripción para generar tu narración.",
+    "nextStepHintExternal": "Sube un clip desde el panel de vista previa y abre la pestaña Transcripción para usar el prompt de IA externa.",
+    "estimateLabel": "Duración estimada",
+    "estimateValue": "~{minutes} min",
+    "toneLabel": "Tono del guion",
+    "customTonePlaceholder": "Describe el tono, estilo o personalidad del narrador…",
+    "repoContextLabel": "Contexto adicional (opcional)",
+    "repoContextPlaceholder": "Pega un README, descripción del proyecto, funciones clave o cualquier nota que ayude a la IA a escribir una narración más precisa…",
+    "repoContextHint": "Se incluye en el prompt de IA externa copiado (y en la generación local cuando está activa) — añade nombres de producto, terminología o notas del README para una narración más precisa.",
+    "repoContextFilled": "{count} caracteres añadidos",
+    "tones": {
+      "cinematic": "Cinematográfico",
+      "documentary": "Documental",
+      "demo": "Demo de app",
+      "energetic": "Enérgico",
+      "calm": "Calmado",
+      "educational": "Educativo",
+      "promotional": "Promocional",
+      "custom": "Personalizado…"
+    }
+  },
+  "transcript": {
+    "title": "Transcripción",
+    "empty": "Ejecuta la transcripción o pega tu propio guion. Puedes sincronizar las marcas de tiempo con el vídeo cargado en cualquier momento.",
+    "emptyExternal": "Copia el prompt de IA externa, pega la narración abajo y sincroniza las marcas de tiempo con el vídeo cargado.",
+    "label": "Guion editable",
+    "placeholder": "Pega o edita tu guion — luego sincroniza las marcas de tiempo con el vídeo.",
+    "segmentsTitle": "Segmentos",
+    "segmentsHint": "Edita los tiempos de entrada y salida para ajustar cuándo aparece cada subtítulo.",
+    "downloadTxt": "Descargar .txt",
+    "wordCount": "{count} palabras",
+    "languageLabel": "Idioma detectado",
+    "noSegments": "Aún no hay marcas de tiempo — sincroniza con el vídeo cargado para generarlas.",
+    "useInVoice": "Usar en la pestaña Voz",
+    "sync": "Sincronizar con el vídeo",
+    "syncHint": "Redistribuye las marcas de tiempo a lo largo del vídeo para que cada línea encaje con la línea de tiempo.",
+    "syncNeedsVideo": "Carga un vídeo primero para sincronizar las marcas de tiempo.",
+    "seekToSegment": "Llevar el reproductor a este segmento",
+    "segmentStartLabel": "Tiempo de inicio (MM:SS)",
+    "segmentEndLabel": "Tiempo de fin (MM:SS)",
+    "segmentInLabel": "ENT",
+    "segmentOutLabel": "SAL",
+    "segmentDuration": "{dur} s",
+    "deleteSegment": "Eliminar segmento",
+    "collapsible": {
+      "expandHint": "Toca para expandir o contraer"
+    },
+    "externalPrompt": {
+      "title": "Prompt para IA externa (Gemini, ChatGPT, …)",
+      "hint": "Copia este prompt en una IA que pueda ver tu vídeo. Sube el mismo clip, pega el prompt y pídele que narre solo lo que ve — ignora cualquier audio existente en el clip.",
+      "steps": {
+        "upload": "Sube el mismo vídeo a tu IA",
+        "pastePrompt": "Pega el prompt",
+        "watchVisuals": "Deja que la IA vea el clip completo (solo imágenes — sin audio)",
+        "copyNarration": "Copia la locución en texto plano",
+        "pasteScript": "Pégala en el guion",
+        "sync": "Pulsa Sincronizar con el vídeo"
+      },
+      "stats": "Objetivo ~{words} palabras (máx. estricto {maxWords}) · clip {duration} · {wpm} ppm ritmo natural",
+      "needsDuration": "Carga un vídeo primero para incluir la duración y el objetivo de palabras correctos.",
+      "copy": "Copiar prompt",
+      "copiedTitle": "Copiado",
+      "copiedMessage": "Prompt de transcripción externa copiado al portapapeles.",
+      "copyFailedTitle": "Error al copiar",
+      "copyFailedMessage": "No se pudo copiar el prompt — selecciónalo y cópialo manualmente."
+    }
+  },
+  "voice": {
+    "title": "Voz",
+    "voiceLabel": "Preset de voz",
+    "generate": "Sintetizar voz",
+    "generating": "Renderizando voz…",
+    "downloadAudio": "Descargar MP3",
+    "previewNotice": "La locución va seguida sin huecos. Vuelve a sincronizar tras editar el guion.",
+    "syncedAutoHint": "Los segmentos están sincronizados con el vídeo. Pulsa Sintetizar voz cuando quieras generar la locución.",
+    "previewSentence": "¡Hola! Soy una voz de Frameline. Elígeme para narrar tu próximo vídeo.",
+    "previewLabel": "Previsualizar voz",
+    "previewPlay": "Reproducir vista previa",
+    "previewStop": "Detener vista previa"
+  },
+  "timeline": {
+    "title": "Línea de tiempo",
+    "subtitle": "Arrastra los controladores de entrada y salida, mueve el cabezal o define los límites desde el reproductor.",
+    "inLabel": "Entrada",
+    "outLabel": "Salida",
+    "lengthLabel": "Duración",
+    "setIn": "Marcar entrada en el cabezal",
+    "setOut": "Marcar salida en el cabezal",
+    "playRange": "Reproducir selección",
+    "stopRange": "Detener",
+    "reset": "Restablecer selección",
+    "apply": "Recortar clip",
+    "cutting": "Recortando…",
+    "downloadCut": "Descargar clip recortado",
+    "clipInPlace": "Reemplazar con la selección",
+    "clipping": "Reemplazando…",
+    "rangeHint": "Selección: {start} → {end}"
+  },
+  "export": {
+    "title": "Renderizar vídeo final",
+    "renderHint": "Elige qué incluir abajo y renderiza. Recorte, narración y subtítulos se ejecutan en una sola pasada en el servidor.",
+    "includeTitle": "Incluir",
+    "optionVoiceover": "Sustituir el audio por la narración",
+    "optionVoiceoverHint": "Usa la voz sintetizada que generaste en la pestaña Voz.",
+    "optionVoiceoverMissing": "Genera una voz en la pestaña Voz para habilitar esta opción.",
+    "optionCaptions": "Incrustar subtítulos en pantalla",
+    "optionCaptionsHint": "Incrusta los subtítulos cronometrados de tu transcripción en la imagen.",
+    "optionCaptionsMissing": "Transcribe el vídeo en la pestaña Transcripción para habilitar esta opción.",
+    "render": "Renderizar vídeo final",
+    "rendering": "Renderizando…",
+    "downloadRender": "Descargar vídeo final"
+  },
+  "player": {
+    "empty": "Carga un vídeo para previsualizar",
+    "play": "Reproducir",
+    "pause": "Pausar",
+    "stop": "Detener",
+    "loadError": "No se pudo cargar el audio.",
+    "initError": "El reproductor de audio no pudo iniciarse."
+  },
+  "errors": {
+    "noVideo": "Carga un vídeo primero.",
+    "noTranscript": "Añade primero algo de texto al guion."
+  },
+  "toasts": {
+    "errorTitle": "Algo salió mal",
+    "videoSelected": {
+      "title": "Vídeo cargado",
+      "message": "{name} está listo para editar."
+    },
+    "videoReplaced": {
+      "title": "Clip activo cambiado",
+      "message": "Ahora editando {name}."
+    },
+    "clipsAdded": {
+      "title": "Añadido a la biblioteca",
+      "message": "{count} clip(s) listos para editar."
+    },
+    "clipRemoved": {
+      "title": "Clip eliminado",
+      "message": "{name} se quitó de la biblioteca."
+    },
+    "introDetected": {
+      "title": "Intro detectada",
+      "message": "Se omitieron {seconds} s de silencio inicial para que la narración empiece con el contenido."
+    },
+    "transcribe": {
+      "title": "Guion listo",
+      "message": "La IA escribió un guion que encaja con tu vídeo. Revísalo en la pestaña Transcripción."
+    },
+    "synth": {
+      "title": "Voz generada",
+      "message": "El audio sintetizado está listo para previsualizar o descargar."
+    },
+    "cut": {
+      "title": "Clip recortado",
+      "message": "El rango seleccionado se guardó como un nuevo clip recortado."
+    },
+    "clip": {
+      "title": "Clip reemplazado",
+      "message": "El clip activo se reemplazó con el rango seleccionado — la línea de tiempo refleja los nuevos límites."
+    },
+    "render": {
+      "title": "Vídeo final listo",
+      "message": "Tu vídeo final está listo. Usa el botón Descargar para guardarlo."
+    },
+    "sync": {
+      "title": "Marcas sincronizadas",
+      "message": "Cada línea del guion está ahora alineada con la línea de tiempo del vídeo."
+    },
+    "syncTrimmed": {
+      "title": "Guion recortado al vídeo",
+      "message": "El texto supera lo que este clip puede llevar a ritmo natural. Se eliminaron las últimas frases — acorta el guion o usa un vídeo más largo."
+    }
+  },
+  "merge": {
+    "title": "Fusionar clips",
+    "subtitle": "Fusiona los vídeos de tu biblioteca en un único archivo. Reordénalos con los botones de flecha en la biblioteca de clips del panel de vista previa.",
+    "noLibrary": "Sube vídeos desde el panel de vista previa primero — aparecerán aquí para fusionarlos.",
+    "orderNote": "Para cambiar el orden de fusión, usa los botones de flecha en la biblioteca de clips del panel de vista previa.",
+    "resetTrims": "Borrar todos los recortes",
+    "include": "Incluir en la fusión",
+    "exclude": "Omitir de la fusión",
+    "excludedHint": "Omitido de esta fusión",
+    "merge": "Fusionar",
+    "merging": "Fusionando clips…",
+    "download": "Descargar vídeo fusionado",
+    "downloadFilename": "fusionado.mp4",
+    "mergeInPlace": "Reemplazar clips fusionados en la biblioteca",
+    "addedToLibrary": "Reemplazado en la biblioteca",
+    "clipCount": "{count} de {max} clips",
+    "totalDuration": "Total · {duration}",
+    "rowLabel": "{index}. {name}",
+    "rowMeta": "Empieza en {start} · {duration} · {size} MB",
+    "trimmedHint": "recortado",
+    "trim": "Recortar clip",
+    "errors": {
+      "needTwo": "Añade al menos dos vídeos para fusionar.",
+      "maxReached": "Puedes fusionar hasta {max} clips por lote."
+    },
+    "toast": {
+      "errorTitle": "Error al fusionar",
+      "mergedTitle": "Clips fusionados",
+      "mergedMessage": "Tus vídeos se fusionaron en el orden elegido.",
+      "replacedInLibrary": {
+        "title": "Biblioteca actualizada",
+        "message": "El clip fusionado reemplazó a los vídeos de origen en tu biblioteca."
+      }
+    },
+    "trimDialog": {
+      "title": "Recortar · {name}",
+      "subtitle": "Duración de origen: {duration}. Arrastra los controladores para elegir qué se reproduce en la línea fusionada.",
+      "in": "Entrada · {value}",
+      "out": "Salida · {value}",
+      "length": "Duración · {value}",
+      "reset": "Usar clip completo",
+      "cancel": "Cancelar",
+      "apply": "Aplicar recorte"
+    }
+  }
+}

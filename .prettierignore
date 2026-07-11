@@ -1,0 +1,11 @@
+.next
+node_modules
+.turbo
+out
+build
+dist
+coverage
+package-lock.json
+public
+helm
+*.log
