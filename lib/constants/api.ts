@@ -4,7 +4,7 @@
 export const MAX_UPLOAD_BYTES = 200 * 1024 * 1024;
 
 /** Per-batch cap for the concat endpoint. */
-export const MAX_CONCAT_FILES = 8;
+export const MAX_CONCAT_FILES = 12;
 
 /** Max characters accepted by `/api/tts` in a single request. */
 export const MAX_TTS_TEXT_LENGTH = 4096;
